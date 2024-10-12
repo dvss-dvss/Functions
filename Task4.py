@@ -4,7 +4,7 @@ def create_votes(parties, people):
     results = []
     for _ in range(people):
         vote = random.randint(0, parties)
-        results.append(vote if vote > 0 else - 1)
+        results.append(vote if vote > 0 else -1)
     return results
 
 def election_results(parties, votes):

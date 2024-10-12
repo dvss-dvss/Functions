@@ -50,3 +50,19 @@ def empty_places_in_gender_coupe(carriage, gender):
             if len(answer1) < 4:
                 answer += answer1
     return answer
+
+carriage = random_carriage()
+print_carriage(carriage)
+
+print('список полностью свободных купе')
+print(empty_coupe_list(carriage))
+print('списокл свободных мест в вагоне')
+print(empty_coupe_list(carriage))
+print('список свободных нижних мест в вагоне')
+print(empty_lh_place_list(carriage))
+print('список свободных верхних мест в вагоне')
+print(empty_lh_place_list(carriage, False))
+print('список свободных мест в купе с исключительно мужской компанией')
+print(empty_places_in_gender_coupe(carriage, 'м'))
+print('список свободных мест в купе с исключительно женской компанией')
+print(empty_places_in_gender_coupe(carriage, 'ж'))
